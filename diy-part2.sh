@@ -11,4 +11,15 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.50.222/g' package/base-files/files/bin/config_generate
+
+pushd package/lean
+
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+
+# Add luci-app-jd-dailybonus
+git clone --depth=1 https://github.com/jerrykuku/node-request
+git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
+
+popd
