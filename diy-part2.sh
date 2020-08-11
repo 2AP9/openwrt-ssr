@@ -22,4 +22,7 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone --depth=1 https://github.com/jerrykuku/node-request
 git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
 
+# FileBrowser
+git clone https://github.com/project-openwrt/FileBrowser.git package/mine/FileBrowser
+
 popd
